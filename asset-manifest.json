@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VISHALs-PORTFOLIO/static/css/main.14ca9e48.css",
+    "main.js": "/VISHALs-PORTFOLIO/static/js/main.b957caa8.js",
+    "index.html": "/VISHALs-PORTFOLIO/index.html",
+    "main.14ca9e48.css.map": "/VISHALs-PORTFOLIO/static/css/main.14ca9e48.css.map",
+    "main.b957caa8.js.map": "/VISHALs-PORTFOLIO/static/js/main.b957caa8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14ca9e48.css",
+    "static/js/main.b957caa8.js"
+  ]
+}
