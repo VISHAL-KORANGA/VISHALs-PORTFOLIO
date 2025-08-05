@@ -1,0 +1,69 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: white;
+}
+
+.loading-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.loading-logo {
+  font-size: var(--text-6xl);
+  font-weight: 800;
+  margin-bottom: var(--space-xl);
+}
+
+.loading-title {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.loading-subtitle {
+  font-size: var(--text-lg);
+  opacity: 0.9;
+  margin-bottom: var(--space-2xl);
+}
+
+.progress-container {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+}
+
+.progress-bar {
+  height: 100%;
+  background: white;
+  border-radius: 2px;
+}
+
+.loading-text {
+  font-size: var(--text-base);
+  opacity: 0.8;
+  margin-bottom: var(--space-xl);
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}

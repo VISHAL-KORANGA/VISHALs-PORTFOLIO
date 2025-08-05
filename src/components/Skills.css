@@ -1,0 +1,110 @@
+.skills {
+  background: var(--background);
+}
+
+.skills-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-3xl);
+  flex-wrap: wrap;
+}
+
+.skill-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-weight: 500;
+}
+
+.skill-tab.active {
+  background: var(--category-color, var(--primary-color));
+  color: white;
+  border-color: var(--category-color, var(--primary-color));
+}
+
+.skill-tab:hover {
+  border-color: var(--category-color, var(--primary-color));
+  color: var(--category-color, var(--primary-color));
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: var(--space-xl);
+  transition: all var(--transition-normal);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.skill-icon {
+  font-size: var(--text-2xl);
+}
+
+.skill-name {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-progress-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.skill-percentage {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--primary-color);
+  min-width: 40px;
+}
+
+.skill-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1.5s ease-out;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
